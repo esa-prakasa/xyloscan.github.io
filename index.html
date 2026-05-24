@@ -16,7 +16,7 @@
     <p>Second paragraph.</p>
 
     <span>Line one</span><br>
-    <span>Line two</span>
+    <span>Line two</span> <br>
     
  
 
@@ -25,15 +25,18 @@
   function myFunction() { alert("Clicked!"); }
 </script>
 
+    <br>
 
 <input type="text" oninput="greet()" placeholder="Type here...">
 <script>
   function greet() { document.getElementById('output').textContent = "Hello!"; }
 </script>
 
-
+<br>
+    
   <input type="range" min="0" max="100" oninput="update(this.value)">
 
+    <br>
  <button onclick="toggle()">Toggle</button>
 <div id="box" style="display:none">Hidden content</div>
 <script>
