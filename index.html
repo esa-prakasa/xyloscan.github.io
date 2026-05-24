@@ -24,6 +24,24 @@
 <script>
   function myFunction() { alert("Clicked!"); }
 </script>
+
+
+<input type="text" oninput="greet()" placeholder="Type here...">
+<script>
+  function greet() { document.getElementById('output').textContent = "Hello!"; }
+</script>
+
+
+  <input type="range" min="0" max="100" oninput="update(this.value)">
+
+ <button onclick="toggle()">Toggle</button>
+<div id="box" style="display:none">Hidden content</div>
+<script>
+  function toggle() {
+    const el = document.getElementById('box');
+    el.style.display = el.style.display === 'none' ? 'block' : 'none';
+  }
+</script>
   
   
 </html>
